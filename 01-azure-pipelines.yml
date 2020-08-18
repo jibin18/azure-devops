@@ -18,3 +18,8 @@ jobs:
   steps:
   - script: echo Job2 - Add other tasks to build, test, and deploy your project.
     displayName: 'Run a multi-line script'
+- job: Job3
+  dependsOn: Job2
+  steps:
+  - script: echo Job3 - Add other tasks to build, test, and deploy your project.
+    displayName: 'Run a multi-line script'
